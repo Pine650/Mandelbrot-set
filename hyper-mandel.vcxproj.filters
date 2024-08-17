@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Non-Code Files">
+      <UniqueIdentifier>{f3812ecf-3bbe-4fa1-8b62-2b3f352c258f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\mandel">
+      <UniqueIdentifier>{205a9298-7da6-4567-b6b5-6b67b756584b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mandel">
+      <UniqueIdentifier>{ddbc515b-a87c-42f9-bada-e15f2f285633}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>Non-Code Files</Filter>
+    </None>
+    <None Include=".gitignore">
+      <Filter>Non-Code Files</Filter>
+    </None>
+    <None Include="LICENSE">
+      <Filter>Non-Code Files</Filter>
+    </None>
+    <None Include="src\mandel\calculate.tpp">
+      <Filter>Header Files\mandel</Filter>
+    </None>
+    <None Include="src\misc.tpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="src\wnd_proc_mouse_click_or_move.tpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="src\wnd_proc_mouse_wheel.tpp">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="src\wnd_proc.tpp">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="todo.txt">
+      <Filter>Non-Code Files</Filter>
+    </Text>
+    <Text Include="resources\UI Layout.txt">
+      <Filter>Non-Code Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\mandel\calculate.hpp">
+      <Filter>Header Files\mandel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mandel\render.hpp">
+      <Filter>Header Files\mandel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\wnd_proc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\consts.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\wnd_proc_paint_mandel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\version.hpp">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\icon.hpp">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\globals.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\error_msg_box.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\misc.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\wnd_proc_mouse_click_or_move.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\debug_print_defines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\error_funcs_defines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structs_defines.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\wnd_proc_mouse_wheel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="resources\icon.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mandel\render.cpp">
+      <Filter>Source Files\mandel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wnd_proc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wnd_proc_paint_mandel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error_msg_box.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

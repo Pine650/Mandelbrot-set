@@ -1,0 +1,107 @@
+Int and Float use spinbox
+- for done
+
+Set Params
+	Set: <select>
+		Options:
+			"Mandelbrot Set" (default)
+			"Julia Set"
+			"Burning Ship Fractal"
+			"Sus Fractal"
+			"Custom Polynomial"
+	For "Mandelbrot Set":
+		ExponentX: <float=2>
+		ExponentY: <float=0>
+		Zx: <float=0>
+		Zy: <float=0>
+Location Params
+-	Cx: <float=0>; spinbox speed based on zoom
+-	Cy: <float=0>; spinbox speed based on zoom
+-	Zoom: <float=0.25>; spinbox scaling logarythmic
+	Use Scale: <checkbox=false> (questionmark icon hover: Use scale instead of zoom (it is simply the reciprocal of zoom))
+	Reset Coordinates: <button> (might move this down)
+	Log Zoom: <checkbox=false>
+-	Rotation: <float=0>
+	Rotation Unit: <select>
+		Options:
+			"Degrees" (default)
+			"Radians"
+			"Gradians"
+	Modulo Rotation When Scrolling: <checkbox=true>
+	Modulo Rotation On Input: <checkbox=true>
+	SkewX: <float=0>
+	SkewY: <float=0>
+	FlipX: <checkbox=false>
+	FlipY: <checkbox=false>
+	ScaleX: <float=1>
+	ScaleY: <float=1>
+	TranslateX: <float=0>
+	TranslateY: <float=0>
+	Zoom Mode: <select>
+		Options:
+			"Y Stable"
+			"X Stable"
+			"Grow" (default)
+			"Shrink"
+	Smooth Movement: <checkbox=true>
+Render Params
+	Render Mode External: <select>
+		Options:
+			"None"
+			"Circular Bailout" (default)
+			"Derivative Bailout"
+			"Exterior Distance Estimate"
+	For "Iteration Count":
+		Max Iteration Count: <int=10000>; range: x >= 0
+		Iteration Count Scaling: <float=1>
+		Normalized: <checkbox=false>
+	Render Mode Internal: <select>
+		Options:
+			"None" (default)
+			"Loop Iteration Count"
+			"Interior Distance Estimate"
+	For "Loop Iteration Count":
+		Max Loop Iteration Count: <int=10000>; range: x >= 0
+		Loop Iteration Count Scaling: <float=1>
+	Log View: <checkbox=false>
+	Precision: <select>
+		Options:
+			"Float" (default)
+			"Double"
+			"Long Double" (if not available on processor then will say "Long Double (Emulated)" emulated using GMP or MPFR or MPIR)
+			"Quad (GMP)" (possibly MPFR or MPIR instead)
+			"Oct (GMP)" (possibly MPFR or MPIR instead)
+			"BigDecimal (GMP)" (possibly MPIR instead)
+Calculation Params
+	Calculation: <select>
+		Options:
+			"Normal" (default)
+			"Optimized Algo"
+			"Vector Operations"
+			"Shader"
+	Threads: <int=CPU cores>; range: x >= 0
+	Edge Tracing: <checkbox=false>
+	Blitting: <select>
+		Options:
+			"FillRect (very slow)"
+			"Bitmap + SetPixel (slow)"
+			"Bitmap + PixelArray (medium)" (default)
+			"Vulkan Compute (medium fast)"
+			"Vulkan Shader (fast)"
+	Edge Tracing: <checkbox=false>
+	Peturbation Theory: <checkbox=false>
+	Render to File: <button>
+UI Params
+	Dragging Mode: <select>
+		Options:
+			"Normal Mode" (default)
+			"Centered Cursor"
+	Live Update: <checkbox> (questionmark icon hover: Updates fractal for each character of input)
+	Capture Volume Inputs: <checkbox=false> (questionmark icon hover: Converts volume up to rotate clockwise and down to counterclockwise, for keyboards with a volume knob)
+	Reverse Volume Inputs: <checkbox=false> (greyed out unless capture volume inputs checked, but still editable despite greyed out)
+	Reset Focus On Main Window Click: <checkbox=true>
+	Configure Hiding Components: <checkbox=false>
+Misc:
+	Version: <info>
+	Check for Updates: <button>
+	Reset All Settings: <button> (brings up confirmation prompt)
